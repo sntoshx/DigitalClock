@@ -53,22 +53,22 @@ writing = function (h1, h2, m1, m2) {
 off = function (h1, h2, m1, m2) {
   for (i = 0; i < encode[h1].length; i++) {
     s = ".hhone-" + dig[encode[h1][i]];
-    document.querySelector(s).style.setProperty("fill", "rgb(15,15,15,0.1");
+    document.querySelector(s).style.setProperty("fill", "rgb(10,10,10,0.2");
   }
 
   for (i = 0; i < encode[h2].length; i++) {
     s = ".hhtwo-" + dig[encode[h2][i]];
-    document.querySelector(s).style.setProperty("fill", "rgb(15,15,15,0.1");
+    document.querySelector(s).style.setProperty("fill", "rgb(10,10,10,0.2");
   }
 
   for (i = 0; i < encode[m1].length; i++) {
     s = ".mmone-" + dig[encode[m1][i]];
-    document.querySelector(s).style.setProperty("fill", "rgb(15,15,15,0.1");
+    document.querySelector(s).style.setProperty("fill", "rgb(10,10,10,0.2");
   }
 
   for (i = 0; i < encode[m2].length; i++) {
     s = ".mmtwo-" + dig[encode[m2][i]];
-    document.querySelector(s).style.setProperty("fill", "rgb(15,15,15,0.1");
+    document.querySelector(s).style.setProperty("fill", "rgb(10,10,10,0.2");
   }
 };
 
