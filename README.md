@@ -1,2 +1,3 @@
 # DigitalClock
-A digital clock based upon classic 7-segment display!
+___
+A digital clock based upon the classic *7-segment display!* 
