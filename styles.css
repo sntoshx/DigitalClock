@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --themecolor: black;
+  --themeinvert: white;
+  --coloncolor: red;
+  --neon: rgb(255, 0, 0, 0.75);
+}
+
+@keyframes blink {
+  0% {
+    filter: opacity(1);
+  }
+  100% {
+    filter: opacity(0);
+  }
+}
+body {
+  background-color: var(--themecolor);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .theme {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 2vw;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.theme > img {
+  transition: 0.2s linear all;
+  height: 50px;
+  position: absolute;
+}
+
+.theme > img:hover {
+  cursor: pointer;
+} */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  outline: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-time {
+  display: flex;
+  width: 90%;
+}
+.main-time svg {
+  height: 35vw;
+  margin: 5px;
+  filter: drop-shadow(0 0 1vw var(--neon));
+}
+
+.colon {
+  font-family: Georgia;
+  font-size: 27.5vw;
+  vertical-align: middle;
+  color: var(--coloncolor);
+  text-shadow: 0 0 2vw var(--neon);
+  animation: blink 1s both infinite ease-in;
+}
+
+.main-time svg g polygon {
+  /* fill: var(--coloncolor); */
+  stroke: var(--coloncolor);
+  stroke-width: 0.1px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    outline: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-time {
+    display: flex;
+    width: 57.5%;
+  }
+  .main-time svg {
+    height: 20vw;
+    margin: 5px;
+    filter: drop-shadow(0 0 0.5vw var(--neon));
+  }
+
+  .colon {
+    font-family: Georgia;
+    font-size: 17vw;
+    vertical-align: middle;
+    color: var(--coloncolor);
+    text-shadow: 0 0 8px var(--neon);
+    animation: blink 1s both infinite ease-in;
+  }
+
+  .main-time svg g polygon {
+    /* fill: var(--coloncolor); */
+    stroke: var(--coloncolor);
+    stroke-width: 0.1px;
+  }
+}
