@@ -9,7 +9,6 @@
   --coloncolor: red;
   --neon: rgb(255, 0, 0, 0.75);
 }
-
 @keyframes blink {
   0% {
     filter: opacity(1);
@@ -26,25 +25,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-/* .theme {
-  width: 70px;
-  height: 70px;
-  margin-bottom: 2vw;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-}
-.theme > img {
-  transition: 0.2s linear all;
-  height: 50px;
-  position: absolute;
-}
-
-.theme > img:hover {
-  cursor: pointer;
-} */
-
 .container {
   width: 100vw;
   height: 65vh;
@@ -52,7 +32,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .main-time {
   display: flex;
   width: 90%;
@@ -62,7 +41,6 @@ body {
   margin: 5px;
   filter: drop-shadow(0 0 1vw var(--neon));
 }
-
 .colon {
   font-family: Georgia;
   font-size: 27.5vw;
@@ -71,13 +49,10 @@ body {
   text-shadow: 0 0 2vw var(--neon);
   animation: blink 1s both infinite ease-in;
 }
-
 .main-time svg g polygon {
-  /* fill: var(--coloncolor); */
   stroke: var(--coloncolor);
   stroke-width: 0.1px;
 }
-
 @media (min-width: 1200px) {
   .container {
     width: 100vw;
@@ -86,7 +61,6 @@ body {
     align-items: center;
     justify-content: center;
   }
-
   .main-time {
     display: flex;
     width: 57.5%;
@@ -96,7 +70,6 @@ body {
     margin: 5px;
     filter: drop-shadow(0 0 0.5vw var(--neon));
   }
-
   .colon {
     font-family: Georgia;
     font-size: 17vw;
@@ -105,9 +78,7 @@ body {
     text-shadow: 0 0 8px var(--neon);
     animation: blink 1s both infinite ease-in;
   }
-
   .main-time svg g polygon {
-    /* fill: var(--coloncolor); */
     stroke: var(--coloncolor);
     stroke-width: 0.1px;
   }

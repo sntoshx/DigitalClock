@@ -31,22 +31,34 @@ let encode = {
 writing = function (h1, h2, m1, m2) {
   for (i = 0; i < encode[h1].length; i++) {
     s = ".hhone-" + dig[encode[h1][i]];
+    document
+      .querySelector(s)
+      .style.setProperty("filter", "drop-shadow(0 0 0.5vw var(--neon))");
     document.querySelector(s).style.setProperty("fill", "var(--coloncolor)");
   }
 
   for (i = 0; i < encode[h2].length; i++) {
     s = ".hhtwo-" + dig[encode[h2][i]];
     document.querySelector(s).style.setProperty("fill", "var(--coloncolor)");
+    document
+      .querySelector(s)
+      .style.setProperty("filter", "drop-shadow(0 0 0.5vw var(--neon))");
   }
 
   for (i = 0; i < encode[m1].length; i++) {
     s = ".mmone-" + dig[encode[m1][i]];
     document.querySelector(s).style.setProperty("fill", "var(--coloncolor)");
+    document
+      .querySelector(s)
+      .style.setProperty("filter", "drop-shadow(0 0 0.5vw var(--neon))");
   }
 
   for (i = 0; i < encode[m2].length; i++) {
     s = ".mmtwo-" + dig[encode[m2][i]];
     document.querySelector(s).style.setProperty("fill", "var(--coloncolor)");
+    document
+      .querySelector(s)
+      .style.setProperty("filter", "drop-shadow(0 0 0.5vw var(--neon))");
   }
 };
 
@@ -54,20 +66,32 @@ off = function (h1, h2, m1, m2) {
   for (i = 0; i < encode[h1].length; i++) {
     s = ".hhone-" + dig[encode[h1][i]];
     document.querySelector(s).style.setProperty("fill", "rgb(10,10,10,0.2");
+    document
+      .querySelector(s)
+      .style.setProperty("filter", "drop-shadow(0 0 2px rgb(0,0,0,0)");
   }
 
   for (i = 0; i < encode[h2].length; i++) {
     s = ".hhtwo-" + dig[encode[h2][i]];
+    document
+      .querySelector(s)
+      .style.setProperty("filter", "drop-shadow(0 0 2px rgb(0,0,0,0)");
     document.querySelector(s).style.setProperty("fill", "rgb(10,10,10,0.2");
   }
 
   for (i = 0; i < encode[m1].length; i++) {
     s = ".mmone-" + dig[encode[m1][i]];
+    document
+      .querySelector(s)
+      .style.setProperty("filter", "drop-shadow(0 0 2px rgb(0,0,0,0)");
     document.querySelector(s).style.setProperty("fill", "rgb(10,10,10,0.2");
   }
 
   for (i = 0; i < encode[m2].length; i++) {
     s = ".mmtwo-" + dig[encode[m2][i]];
+    document
+      .querySelector(s)
+      .style.setProperty("filter", "drop-shadow(0 0 2px rgb(0,0,0,0)");
     document.querySelector(s).style.setProperty("fill", "rgb(10,10,10,0.2");
   }
 };
